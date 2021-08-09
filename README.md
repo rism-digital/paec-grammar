@@ -13,4 +13,4 @@ This grammar is being maintained by the [RISM Digital Center](https://rism.digit
 
 This grammar was written primarily by David Rizo in 2013. The [details of the grammar](/docs/rizo-iñesta-2013.pdf) are published in:
 
-Rizo, D.; and Iñesta, J. M. A Grammar for Plaine and Easie Code. In Roland, P.; and Kepper, J., editor(s), Music Encoding Conference Proceedings 2013 and 2014, pages 54–64, 2016. Bavarian State Library (BSB)
+Rizo, D.; and Iñesta, J. M. *A Grammar for Plaine and Easie Code*. In Roland, P.; and Kepper, J., editor(s), Music Encoding Conference Proceedings 2013 and 2014, pages 54–64, 2016. Bavarian State Library (BSB)
