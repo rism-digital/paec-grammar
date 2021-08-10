@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pypaec"
+version = "0.1.0"
+description = ""
+authors = ["Andrew Hankinson <andrew.hankinson@rism.digital>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+antlr4-python3-runtime = "^4.9.2"
+ipython = "^7.25.0"
+small-asc = {git = "https://github.com/rism-digital/small-asc", rev = "main"}
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
