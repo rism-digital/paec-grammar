@@ -122,7 +122,7 @@ items
 
 clefkeytimechange
     :
-    (clef | timesignature | keysignature )+ SPACE
+    (clef | timesignature | keysignature )+ SPACE*
     ;
 
 item
@@ -148,9 +148,8 @@ repeatgroup
     REPEATGRPDELIM LETTER_f+    // first a set of elements is marked, then it is repeated several times
     ;
 
-
 triplet:
-    LEFTPAR items RIGHTPAR
+    LEFTPAR LEFTCURBRACES? octave? rhythmicvalue ( (notepropschange* note)+ | rest+ ) RIGHTCURBRACES? RIGHTPAR
 ;
 
 
@@ -160,6 +159,7 @@ irregulargroup:
     // rism, sometimes the figure with the total value of the group is omitted
     figure? LEFTPAR items SEMICOLON number RIGHTPAR
 ;
+
 
 
 notepropschange
@@ -196,6 +196,7 @@ note
     |
     notefermata
     ;
+
 
 notefermata
     :
