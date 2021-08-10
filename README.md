@@ -10,6 +10,10 @@ Currently this grammar is experimental. The PAEC specification has some ambiguit
 
 An experimental Python 3 version of the PAEC parser has been built that will collect the syntax errors and grammar ambiguities, and provide them as a list of dictionaries.
 
+It requires the ANTLR Python runtime to work: 
+
+    $ pip3 install antlr4-python3-runtime
+
 You can validate a single incipit on the command line:
 
     $ python pypaec/pypaec.py "%G-2@c$bB ''4G8D'4BG/''4.bE8F4.D({6DExF})/4G{8AB}4.At8G/4.xF8D'4.A8B/"
