@@ -33,11 +33,18 @@ clef
 keysignature
     :
     DOLLAR
-    ((SHARP | FLAT )    notename+
-    (LEFTBRACKET (SHARP | FLAT )? notename+ RIGHTBRACKET)? // rism [ ] sometimes appear, but are not documented
+    (
+    (SHARP | FLAT)
+    (( notename+ (suppliedaccidental notename+)* suppliedaccidental? )
     |
-    (LEFTBRACKET (SHARP | FLAT )? notename+ RIGHTBRACKET) // rism [ ] sometimes appear, but are not documented
+    ( suppliedaccidental (notename+ suppliedaccidental?)* ))
     )
+    ;
+
+
+suppliedaccidental
+    :
+    (LEFTBRACKET notename+ RIGHTBRACKET)
     ;
 
 
