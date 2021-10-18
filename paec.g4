@@ -35,12 +35,14 @@ keysignature
     DOLLAR
     (
     (SHARP | FLAT)
-    ( notename+ | squarebracket | (notename+ squarebracket)+ notename* | (squarebracket notename+)+ squarebracket? )
+    (( notename+ (suppliedaccidental notename+)* suppliedaccidental? )
+    |
+    ( suppliedaccidental (notename+ suppliedaccidental?)* ))
     )
     ;
 
 
-squarebracket
+suppliedaccidental
     :
     (LEFTBRACKET notename+ RIGHTBRACKET)
     ;

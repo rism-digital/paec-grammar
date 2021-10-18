@@ -1,4 +1,4 @@
-# Generated from pypaec.g4 by ANTLR 4.9.2
+# Generated from pypaec.g4 by ANTLR 4.9
 from antlr4 import *
 if __name__ is not None and "." in __name__:
     from .pypaecParser import pypaecParser
@@ -41,6 +41,15 @@ class pypaecListener(ParseTreeListener):
 
     # Exit a parse tree produced by pypaecParser#keysignature.
     def exitKeysignature(self, ctx:pypaecParser.KeysignatureContext):
+        pass
+
+
+    # Enter a parse tree produced by pypaecParser#suppliedaccidental.
+    def enterSuppliedaccidental(self, ctx:pypaecParser.SuppliedaccidentalContext):
+        pass
+
+    # Exit a parse tree produced by pypaecParser#suppliedaccidental.
+    def exitSuppliedaccidental(self, ctx:pypaecParser.SuppliedaccidentalContext):
         pass
 
 
